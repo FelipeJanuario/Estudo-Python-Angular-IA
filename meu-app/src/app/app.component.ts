@@ -8,5 +8,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'meu-app';
+  title = 'Meu App Angular';
+  contador = 0;
+
+  incrementar() {
+    this.contador++;
+  }
+
+  resetar() {
+    this.contador = 0;
+  }
 }
